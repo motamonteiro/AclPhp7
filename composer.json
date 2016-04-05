@@ -1,0 +1,16 @@
+{
+    "name": "motamonteiro/acl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre Mota Monteiro",
+            "email": "motamonteiro@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MotaMonteiro\\Acl\\":"src/"
+        }
+    }
+}
