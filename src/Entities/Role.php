@@ -51,4 +51,19 @@ class Role
         return $this;
     }
 
+    /**
+     * @param array $permissions
+     * @return Role
+     */
+    public function addPermissions(array $permissions): Role
+    {
+        foreach($permissions as $permission) {
+            if(!$permission instanceof Permission) {
+                throw new \InvalidArgumentException("Invalid Permission");
+            }
+        }
+        $this->permissions = $permissions;
+        return $this;
+    }
+
 }
